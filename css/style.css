@@ -162,7 +162,7 @@ header.title > h1
 {
 	color: white;
 	font-weight: 300;
-	font-size: 28pt;
+	font-size: 24pt;
 }
 
 .score
@@ -289,6 +289,8 @@ footer
 div.misc 
 {
 	display: inline;
+	position: absolute;
+	margin-top: 0px;
 }
 
 div.misc > p
@@ -307,7 +309,8 @@ div.misc > p.airtime
 
 div.staff
 {
-	padding-top: 5px;
+	position: absolute;
+	margin-top: 25px;
 }
 
 div.staff > p
@@ -327,4 +330,9 @@ div.staff strong
 .top-indent
 {
 	margin-top: -10px;
+}
+
+.fixed-230-height
+{
+	height: 230px;
 }
