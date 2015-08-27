@@ -51,7 +51,8 @@ div.divide-50
 
 div.title
 {
-	padding-left: 30px;
+	padding-left: 10px;
+	padding-right: 30px;
 	display: inline-block;
 }
 
@@ -120,8 +121,8 @@ p.username, .avatar
 
 .content
 {
-	margin: 500px auto;
-	width: 1200px;
+	margin: 550px auto;
+	width: 1222px;
 }
 
 .inner-content
@@ -132,7 +133,7 @@ p.username, .avatar
 
 .poster > img
 {
-	width: 300px;
+	width: 286px;
 }
 
 header.title > h1
@@ -150,15 +151,15 @@ header.title > h1
 
 .score
 {
-	background-color: rgb(59, 137, 193);
-	height: 350px;
-	width: 275px;
+	background-color: rgba(59, 137, 193, 0.9);
+	height: 220px;
+	width: 220px;
 }
 
 .score > .total
 {
 	width: 100%;
-	height: 270px;
+	height: 220px;
 	text-align: center;
 }
 
@@ -185,13 +186,14 @@ header.title > h1
 .score > .total > h1
 {
 	font-weight: 100;
-	font-size: 120pt;
+	font-size: 100pt;
 }
 
 .score > .total > p
-{
-	font-size: 24pt;
-	font-weight: 300;
+{   
+	font-size: 18pt;
+    font-weight: 300;
+    margin-top: -15px;
 }
 
 .score > .your-rating > h1
@@ -232,5 +234,5 @@ footer
 
 .top-padding
 {
-	margin-top: 22.5px;
+	margin-top: 17.5px;
 }
