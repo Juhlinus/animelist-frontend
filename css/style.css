@@ -14,9 +14,148 @@ header
 {
 	width: 100%;
 	height: 80px;
-	background-color: rgba(0, 0, 0, 0.8);
 	z-index: 1;
 }
+
+.search
+{
+	opacity: 0.5;
+	text-align: center;
+	/* margin-top: 22.5px; */
+}
+
+.search form input
+{
+	width: 300px;
+	padding-left: 30px;
+	padding-right: 30px;
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+	color: rgb(125, 195, 245);
+	font-size: 10pt;
+}
+
+/*
+ * Header stuff
+ */
+.inner-header
+{
+	position: fixed;
+	background-color: rgba(0, 0, 0, 0.8);
+	width: 100%;
+	height: 80px;
+	transition: all 0.8s ease;
+}
+
+/*
+ * DEFAULT
+ */
+
+.inner-header.default
+{
+	height: 80px;
+}
+
+.inner-header.default h1
+{
+	font-size: 2em;
+	transition: all 0.8s ease;
+}
+
+.inner-header.default .fa-2x
+{
+	font-size: 2em;
+	transition: all 0.8s ease;
+}
+
+.inner-header.default input
+{
+	width: 300px;
+	height: 20px;
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+	transition: all 0.8s ease;
+}
+
+.inner-header.default .search
+{
+	margin-top: 22.5px;
+	transition: all 0.8s ease;
+}
+
+.inner-header.default .top-padding
+{
+	margin-top: 17.5px;
+	transition: all 0.8s ease;
+}
+
+.inner-header.default .profile img
+{
+	height: 50px;
+	transition: all 0.8s ease;
+}
+
+.inner-header.default p.username
+{
+	padding-top: 27.5px;
+	transition: all 0.8s ease;
+}
+
+/*
+ * STICKY
+ */
+
+.inner-header.sticky
+{
+	height: 50px;
+}
+
+.inner-header.sticky h1
+{
+	font-size: 12pt;
+	transition: all 0.8s ease;
+}
+
+.inner-header.sticky .fa-2x
+{
+	transition: all 0.8s ease;
+	font-size: 1.5em;
+}
+
+.inner-header.sticky input
+{
+	width: 300px;
+	height: 15px;
+	padding-top: 7.5px;
+	padding-bottom: 7.5px;
+    transition: all 0.8s ease;
+}
+
+.inner-header.sticky .search
+{
+	margin-top: 7.5px;
+	transition: all 0.8s ease;
+}
+
+.inner-header.sticky .top-padding
+{
+	margin-top: 7.5px;
+	transition: all 0.8s ease;
+}
+
+.inner-header.sticky .profile img
+{
+	height: 25px;
+	transition: all 0.8s ease;
+}
+
+.inner-header.sticky p.username
+{
+	padding-top: 13.5px;
+	transition: all 0.8s ease;
+}
+
+/************************/
 
 .base-color
 {
@@ -62,24 +201,6 @@ input
 	border: 1px solid rgba(125, 195, 245, 0.5);
 	background: rgba(9, 108, 178, 0.2);
 	padding: 5px;
-}
-
-.search
-{
-	opacity: 0.5;
-	text-align: center;
-	margin-top: 22.5px;
-}
-
-.search form input
-{
-	width: 300px;
-	padding-left: 30px;
-	padding-right: 30px;
-	padding-top: 7.5px;
-	padding-bottom: 7.5px;
-	color: rgb(125, 195, 245);
-	font-size: 10pt;
 }
 
 input::-webkit-input-placeholder
@@ -130,7 +251,9 @@ p.username, .avatar
 
 .wrapper
 {
+	/* background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../img/samuraichamploo.jpg"); */
 	background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../img/fmab.jpg");
+	background-size: 100% auto;
 	height: 850px;
 	z-index: 1;
 }
@@ -150,6 +273,7 @@ p.username, .avatar
 .poster > img
 {
 	width: 286px;
+	height: 388px;
 }
 
 header.title > h1
@@ -335,4 +459,22 @@ div.staff strong
 .fixed-230-height
 {
 	height: 230px;
+}
+
+.synopsis
+{
+	margin-top: 5px;
+}
+
+.synopsis > p
+{
+	font-weight: 300;
+	font-size: 11pt;
+	color: #7dc3f5;
+}
+
+.synopsis > p > strong
+{
+	font-size: 500;
+	color: #1993e9;
 }
