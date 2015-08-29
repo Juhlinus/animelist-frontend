@@ -101,6 +101,13 @@ header
 	transition: all 0.8s ease;
 }
 
+.inner-header.default .title
+{
+	position: static;
+	bottom: 0px;
+	transition: all 0.8s ease;
+}
+
 /*
  * STICKY
  */
@@ -119,7 +126,7 @@ header
 .inner-header.sticky .fa-2x
 {
 	transition: all 0.8s ease;
-	font-size: 1.5em;
+	font-size: 1.25em;
 }
 
 .inner-header.sticky input
@@ -139,7 +146,7 @@ header
 
 .inner-header.sticky .top-padding
 {
-	margin-top: 7.5px;
+	margin-top: 13.5px;
 	transition: all 0.8s ease;
 }
 
@@ -152,6 +159,13 @@ header
 .inner-header.sticky p.username
 {
 	padding-top: 13.5px;
+	transition: all 0.8s ease;
+}
+
+.inner-header.sticky .title
+{
+	position: relative;
+	bottom: 1px;
 	transition: all 0.8s ease;
 }
 
@@ -252,8 +266,8 @@ p.username, .avatar
 .wrapper
 {
 	/* background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../img/samuraichamploo.jpg"); */
-	background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../img/fmab.jpg");
-	background-size: 100% auto;
+	background: linear-gradient(0deg, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)), url("../img/fmab.jpg") no-repeat center center fixed;
+	background-size: cover;
 	height: 850px;
 	z-index: 1;
 }
