@@ -8,29 +8,32 @@
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body>
 	<div class="wrapper">
 		<header>
-			<div class="divide-33 top-padding">
-				<nav>
-					<i class="fa fa-bars fa-2x base-color"></i>
-				</nav>
-				<div class="title">
-					<h1 class="base-color">THE ANIME LIST</h1>
+			<div class="inner-header default">
+				<div class="divide-33 top-padding">
+					<nav>
+						<i class="fa fa-bars fa-2x base-color"></i>
+					</nav>
+					<div class="title">
+						<h1 class="base-color">THE ANIME LIST</h1>
+					</div>
 				</div>
-			</div>
-			<div class="divide-33">
-				<div class="search">
-					<form action="index.php" method="get" accept-charset="utf-8">
-						<span class="fa fa-search indent-search base-color"></span><input type="text" name="search" placeholder="SEARCH" />
-					</form>
+				<div class="divide-33">
+					<div class="search">
+						<form action="index.php" method="get" accept-charset="utf-8">
+							<span class="fa fa-search indent-search base-color"></span><input type="text" name="search" placeholder="SEARCH" autofocus />
+						</form>
+					</div>
 				</div>
-			</div>
-			<div class="divide-33">
-				<div class="profile">
-					<img class="avatar" src="img/avatar.jpg" alt="avatar" />
-					<p class="username">Linus Juhlin</p>
+				<div class="divide-33">
+					<div class="profile">
+						<img class="avatar" src="img/avatar.jpg" alt="avatar" />
+						<p class="username">Linus Juhlin</p>
+					</div>
 				</div>
 			</div>
 		</header>
@@ -39,26 +42,34 @@
 				<div class="divide-25">
 					<div class="poster">
 						<img src="img/fmab-poster.png" alt="poster" />
+						<!-- <img src="img/samuraichamploo-poster.jpg" alt="poster" /> -->
 					</div>
 				</div>
 				<div class="divide-50 top-indent">
-					<div class="title">
-						<h1>FULLMETAL ALCHEMIST: BROTHERHOOD</h1>
+					<div class="fixed-230-height">
+						<div class="title">
+							<h1>FULLMETAL ALCHEMIST: BROTHERHOOD</h1>
+						</div>
+						<div class="tags">
+							<div class="tag"><img src="img/tag-end.png" alt=""><p>Action</p></div>
+							<div class="tag"><img src="img/tag-end.png" alt=""><p>Adventure</p></div>
+							<div class="tag"><img src="img/tag-end.png" alt=""><p>Drama</p></div>
+							<div class="tag"><img src="img/tag-end.png" alt=""><p>Fantasy</p></div>
+							<div class="tag"><img src="img/tag-end.png" alt=""><p>Magic</p></div>
+							<div class="tag"><img src="img/tag-end.png" alt=""><p>Shounen</p></div>
+							<div class="tag"><img src="img/tag-end.png" alt=""><p>Military</p></div>
+						</div>
+						<div class="misc">
+							<p class="airtime">2009 - 2010</p><p>R - 17+ (violence & profanity)</p><p>24 min / ep</p>
+						</div>
+						<div class="staff">
+							<p><strong>Director: </strong>Irie, Yasuhiro</p><p><strong>Original Creator: </strong>Arakawa, Hiromu</p>
+						</div>
 					</div>
-					<div class="tags">
-						<div class="tag"><img src="img/tag-end.png" alt=""><p>Action</p></div>
-						<div class="tag"><img src="img/tag-end.png" alt=""><p>Adventure</p></div>
-						<div class="tag"><img src="img/tag-end.png" alt=""><p>Drama</p></div>
-						<div class="tag"><img src="img/tag-end.png" alt=""><p>Fantasy</p></div>
-						<div class="tag"><img src="img/tag-end.png" alt=""><p>Magic</p></div>
-						<div class="tag"><img src="img/tag-end.png" alt=""><p>Shounen</p></div>
-						<!--<div class="tag"><img src="img/tag-end.png" alt=""><p>Military</p></div>-->
-					</div>
-					<div class="misc">
-						<p class="airtime">2009 - 2010</p><p>R - 17+ (violence & profanity)</p><p>24 min / ep</p>
-					</div>
-					<div class="staff">
-						<p><strong>Director: </strong>Irie, Yasuhiro</p><p><strong>Original Creator: </strong>Arakawa, Hiromu</p>
+					<div class="synopsis">
+						<p>In this world there exist alchemists, people who study and perform the art of alchemical transmutation—to manipulate objects and transform one object into another. They are bounded by the basic law of alchemy: in order to gain something you have to sacrifice something of the same value.</p>
+<br>
+<p>The main character is the famous alchemist Edward Elric—also known as the Fullmetal Alchemist—who almost lost his little brother, Alphonse, in an alchemical accident. Edward managed to attach his brother's soul to a large suit of armor. While.. <strong>[ Continue Reading ]</strong></p>
 					</div>
 				</div>
 				<div class="divide-25">
@@ -84,5 +95,17 @@
 		</div>
 	</div>
 	<footer></footer>
+	<script type="text/javascript">
+	$(window).scroll(function() {
+		if ($(this).scrollTop() > 1){  
+			$('div.inner-header').addClass("sticky");
+			$('div.inner-header').removeClass("default");
+		}
+		else{
+			$('div.inner-header').removeClass("sticky");
+			$('div.inner-header').addClass("default");
+		}
+	});
+	</script>
 </body>
 </html>
