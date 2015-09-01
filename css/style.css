@@ -261,14 +261,14 @@ p.username
 
 .avatar
 {
-	padding-top: 12.5px;
+	margin-top: 12.5px;
 }
 
 p.username, .avatar
 {
 	float: right;
 	display: inline-block;
-	padding-right: 25px;
+	margin-right: 25px;
 }
 
 .wrapper
