@@ -85,13 +85,15 @@ header
 
 .inner-header.default .top-padding
 {
-	margin-top: 17.5px;
+	margin-top: 15px;
 	transition: all 0.8s ease;
 }
 
 .inner-header.default .profile img
 {
 	height: 50px;
+	margin-top: 12.5px;
+	margin-right: 20px;
 	transition: all 0.8s ease;
 }
 
@@ -153,12 +155,15 @@ header
 .inner-header.sticky .profile img
 {
 	height: 25px;
+	margin-top: 10px;
+	margin-right: 10px;
 	transition: all 0.8s ease;
 }
 
 .inner-header.sticky p.username
 {
 	padding-top: 13.5px;
+	padding-right: 10px;
 	transition: all 0.8s ease;
 }
 
@@ -242,7 +247,10 @@ input:-ms-input-placeholder {
 .profile img 
 {
 	height: 50px;
+	width: auto;
 	border-radius: 50%;
+	margin: 0;
+	padding: 0;
 }
 
 p.username
@@ -286,8 +294,9 @@ p.username, .avatar
 
 .poster > img
 {
-	width: 286px;
-	height: 388px;
+	width: 100%;
+	height: auto;
+	/* max-height: 390px; */
 }
 
 header.title > h1
@@ -382,13 +391,10 @@ footer
 	z-index: -1;
 }
 
-.reviews h4
-{
-}
-
 .top-padding
 {
-	margin-top: 17.5px;
+	margin-top: 15px;
+	min-width: 315px;
 }
 
 .indent-search
@@ -491,4 +497,65 @@ div.staff strong
 {
 	font-size: 500;
 	color: #1993e9;
+}
+
+.reviews > h4
+{
+	color: #7dc3f5;
+	font-size: 10pt;
+}
+
+.reviews
+{
+	margin-top: 120px;
+	width: 220px;
+}
+
+.reviews .divide-50
+{
+	font-size: 11pt;
+	margin-top: 15px;
+	color: #1a87d6;
+	font-weight: 300;
+}
+
+.poster > button
+{
+	margin-top: 5px;
+	width: 100%;
+	background: 0;
+	border: 1px solid #1993e9;
+	padding: 7.5px;
+	color: #1993e9;
+}
+
+.score,.reviews
+{
+	float: right;
+}
+
+.left-indent
+{
+	margin-left: 25px;
+}
+
+.float-right
+{
+	float: right!important;
+}
+
+.float-left
+{
+	float: left!important;
+}
+
+.divide-18
+{
+	width: 18%;
+
+}
+
+.divide-52
+{
+	width: 52%;
 }
